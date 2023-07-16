@@ -3,6 +3,7 @@ import streamlit as st
 import os
 
 model_path = os.path.join(os.path.dirname(__file__), 'audnzdmodel.sav')
+print(model_path)  # Verify the path
 Prediksi_model = pickle.load(open(model_path, 'rb'))
 
 #Judul Web
