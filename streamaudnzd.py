@@ -1,7 +1,6 @@
 import pickle
 import streamlit as st
 import os
-import sklearn
 
 model_path = os.path.join(os.path.dirname(__file__), 'audnzdmodel.sav')
 print(model_path)  # Verify the path
