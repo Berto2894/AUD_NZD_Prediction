@@ -1,7 +1,9 @@
 import pickle
 import streamlit as st
+import os
 
-Prediksi_model = pickle.load(open('audnzdmodel.sav', 'rb'))
+model_path = os.path.join(os.path.dirname(__file__), 'audnzdmodel.sav')
+Prediksi_model = pickle.load(open(model_path, 'rb'))
 
 #Judul Web
 st.title('Prediksi Harga Mata Uang AUD/NZD')
